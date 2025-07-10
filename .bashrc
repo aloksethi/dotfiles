@@ -145,3 +145,10 @@ if ! shopt -oq posix; then
 fi
 
 export PICO_SDK_PATH=/datadisk/pico/pico-sdk/
+export PICO_EXAMPLES_PATH=/datadisk/pico/pico-examples
+export PICO_EXTRAS_PATH=/datadisk/pico/pico-extras
+export PICO_PLAYGROUND_PATH=/datadisk/pico/pico-playground
+
+alias get_idf='. /datadisk/esp/esp-idf/export.sh'
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - bash)"
